@@ -19,6 +19,24 @@ import modelo.Estudiante;
 public class Practicas {
 
 	// SEGUNDA EVALUACION
+	
+	
+	//PASAR METODOS CON ARRAYS A ARRAYLIST
+	
+	
+	public void ordenaEnteros(ArrayList<Integer> numeros) {
+		for (int i = 0; (i < numeros.size() - 1); i++) {
+			for (int j = i + 1; j < numeros.size(); j++) {
+				if (numeros.get(i) > numeros.get(j)) {
+					Integer aux = numeros.get(i);
+					numeros.set(i, numeros.get(j));
+					numeros.set(j, aux);
+				}
+			}
+		}
+
+	}
+	
 
 	public ArrayList<Estudiante> introListas() {
 		ArrayList<Estudiante> listaE;
@@ -176,7 +194,7 @@ public class Practicas {
 	
 	
 	
-	public HashMap<String, ArrayList<Float>> estadisticaVentas() {
+	/*public HashMap<String, ArrayList<Float>> estadisticaVentas() {
 		HashMap<String, ArrayList<Float>> resultado = new HashMap<String, ArrayList<Float>>();
 		try {
 			// Abrir el fichero
@@ -208,7 +226,7 @@ public class Practicas {
 			System.out.println(e.getMessage());
 		}
 	}
-	
+	*/
 	
 
 	

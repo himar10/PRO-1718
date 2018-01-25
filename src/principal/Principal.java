@@ -147,6 +147,16 @@ public class Principal {
 		
 		HashMap<String, String> HashMapNif = practicas.LeerFicheroNif();
 
+		
+		ArrayList<Integer> numeros2 = new ArrayList<Integer>();
+		numeros2.add(12);
+		numeros2.add(19);
+		numeros2.add(8);
+		numeros2.add(20);
+		
+		practicas.ordenaEnteros(numeros2);
+		
+		
 		System.out.println();
 		System.out.println("fin");
 
